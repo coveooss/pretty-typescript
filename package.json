@@ -1,0 +1,19 @@
+{
+  "name": "pretty-typescript",
+  "version": "1.0.0",
+  "description": "TSLint and TypeScript Formatter configuration files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coveo/pretty-typescript.git"
+  },
+  "author": "Coveo",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/coveo/pretty-typescript/issues"
+  },
+  "homepage": "https://github.com/coveo/pretty-typescript#readme"
+}

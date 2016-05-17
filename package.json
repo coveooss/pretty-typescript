@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/coveo/pretty-typescript/issues"
   },
-  "homepage": "https://github.com/coveo/pretty-typescript#readme"
+  "homepage": "https://github.com/coveo/pretty-typescript#readme",
+  "dependencies": {
+    "gulp-tsfmt": "^1.0.2",
+    "gulp-tslint": "^5.0.0",
+    "lazypipe": "^1.0.1",
+    "tslint": "^3.10.2",
+    "typescript": "^1.8.10",
+    "typescript-formatter": "^2.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }

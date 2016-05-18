@@ -1,8 +1,6 @@
 const lazypipe = require('lazypipe');
 const tslint = require('gulp-tslint');
-const gutil = require('gulp-util');
 const tsfmt = require('./gulp-typescript-formatter');
-const path = require('path');
 
 const tslintOptions = require('./tslint.json');
 const tsfmtOptions = require('./tsfmt.json');

@@ -5,5 +5,5 @@ const path = require('path');
 gulp.task('default', function () {
   gulp.src('examples/**/*.ts')
     .pipe(prettyTypescript())
-    .pipe(gulp.dest('examples/formatted'));
+    .pipe(gulp.dest('formatted-examples'));
 });

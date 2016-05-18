@@ -5,7 +5,6 @@ var through = require('through2');
 var formatter = require('typescript-formatter');
 
 function gulpTypescriptFormatter(options) {
-  var formatOptions = options.configPath ? require(options.configPath) : {};
 
   return through.obj(function(file, enc, cb) {
     if (file.isNull()) {
@@ -14,7 +13,7 @@ function gulpTypescriptFormatter(options) {
     }
 
     if (file.isBuffer()) {
-      var fileContentPromise = formatter.processString(file.path, String(file.contents), formatOptions);
+      var fileContentPromise = formatter.processString(file.path, String(file.contents), options);
 
       fileContentPromise.then(function(result) {
         file.contents = new Buffer(result.dest);

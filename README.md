@@ -1,6 +1,7 @@
 # pretty-typescript
 
 [![Build Status](https://travis-ci.org/coveo/pretty-typescript.svg?branch=master)](https://travis-ci.org/coveo/pretty-typescript)
+[![npm version](https://badge.fury.io/js/pretty-typescript.svg)](https://badge.fury.io/js/pretty-typescript)
 [![dependency status](https://david-dm.org/coveo/pretty-typescript.svg)](https://david-dm.org/coveo/pretty-typescript)
 [![dev dependency status](https://david-dm.org/coveo/pretty-typescript/dev-status.svg)](https://david-dm.org/coveo/pretty-typescript#info=devDependencies)
 

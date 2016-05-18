@@ -1,8 +1,27 @@
 # pretty-typescript
-TSLint and TypeScript Formatter configuration files
+
+A quite delectable Gulp plugin to format and lint TypeScript code.
 
 ## Usage
 
-These configuration files use [tslint](https://github.com/palantir/tslint) as
-well as [typescript-formatter](https://github.com/vvakame/typescript-formatter).
-See the respective GitHub pages for usage instructions.
+Step 1. Install with this command :
+
+```
+npm install --save-dev pretty-typescript
+```
+
+Step 2. Use with this snippet :
+
+```javascript
+const prettyTypescript = require('pretty-typescript');
+
+gulp.task('prettify', function () {
+  gulp.src('src/**/*.ts')
+    .pipe(prettyTypescript())
+    .pipe(gulp.dest('src'));
+});
+```
+
+Step 3. Profit !
+
+Made with <3 by [Coveo](http://coveo.com)

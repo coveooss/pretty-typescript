@@ -3,8 +3,9 @@
   "version": "1.6.0",
   "description": "TSLint and TypeScript Formatter configuration files",
   "main": "index.js",
-  "scripts": {
-    "test": "exit 0"
+  "scripts": {    
+    "test": "echo \"please write some tests\"; exit -1",
+    "try": "gulp"
   },
   "repository": {
     "type": "git",

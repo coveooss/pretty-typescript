@@ -22,7 +22,7 @@ private horrible_FielD: number
      return null      ;
   }
 }
-``` 
+```
 
 Into this:
 

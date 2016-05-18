@@ -1,6 +1,6 @@
 {
   "name": "pretty-typescript",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "TSLint and TypeScript Formatter configuration files",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "gulp-tsfmt": "^1.0.2",
     "gulp-tslint": "^5.0.0",
     "lazypipe": "^1.0.1",
+    "through2": "^2.0.1",
     "tslint": "^3.10.2",
     "typescript": "^1.8.10",
     "typescript-formatter": "^2.2.0"

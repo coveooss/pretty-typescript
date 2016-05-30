@@ -4,31 +4,31 @@ const sinon = require('sinon');
 const File = require('vinyl');
 const prettyTypescript = require('../');
 
-describe('PrettyTypeScript', function () {
+describe('PrettyTypeScript', () => {
   var formatter = null;
 
-  beforeEach(function () {
+  beforeEach(() => {
     formatter = prettyTypescript();
   });
-  afterEach(function () {
+  afterEach(() => {
     formatter = null;
   });
 
-  it('should autoformat TypeScript file', function (done) {
+  it('should autoformat TypeScript file', done => {
     var fakeFile = new File({
       contents: new Buffer('let anything:         number =   {nopadding};'),
       path: 'test.ts'
     });
 
     formatter.write(fakeFile);
-    formatter.once('data', function (file) {
+    formatter.once('data', file => {
       expect(file.isBuffer()).to.be.true;
       expect(file.contents.toString()).to.equal('let anything: number = { nopadding };\n');
       done();
     });
   });
 
-  it('should throw linting errors', function (file) {
+  it('should throw linting errors', done => {
     var fakeFile = new File({
       contents: new Buffer('class notCAMELcase {}'),
       path: 'test.ts'
@@ -38,7 +38,7 @@ describe('PrettyTypeScript', function () {
 
     formatter = prettyTypescript();
     formatter.write(fakeFile);
-    formatter.on('data', function (file) {
+    formatter.on('data', file => {
       expect(logSpy.callCount).to.equal(1);
       expect(logSpy.firstCall.args[2]).to.match(/name must be in pascal case/);
       done();

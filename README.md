@@ -1,4 +1,4 @@
-# pretty-typescript
+# ✨pretty-typescript✨
 
 [![Build Status](https://travis-ci.org/coveo/pretty-typescript.svg?branch=master)](https://travis-ci.org/coveo/pretty-typescript)
 [![npm version](https://badge.fury.io/js/pretty-typescript.svg)](https://badge.fury.io/js/pretty-typescript)
@@ -37,7 +37,7 @@ class incrediblybad {
 }
 ```
 
-In bonus you get this error: 
+In bonus, you get this error:
 
 ``` 
 [13:30:47] [gulp-tslint] error verybad.ts[3, 7]: name must be in pascal case

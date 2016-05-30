@@ -4,14 +4,18 @@ const sinon = require('sinon');
 const File = require('vinyl');
 const prettyTypescript = require('../');
 
-describe('PrettyTypeScript', function () {
-  let formatter = null;
+describe('PrettyTypeScript', () => {
+  var formatter = null;
 
-  beforeEach(() => formatter = prettyTypescript());
-  afterEach(() => formatter = null);
+  beforeEach(() => {
+    formatter = prettyTypescript();
+  });
+  afterEach(() => {
+    formatter = null;
+  });
 
   it('should autoformat TypeScript file', done => {
-    let fakeFile = new File({
+    var fakeFile = new File({
       contents: new Buffer('let anything:         number =   {nopadding};'),
       path: 'test.ts'
     });
@@ -25,12 +29,12 @@ describe('PrettyTypeScript', function () {
   });
 
   it('should throw linting errors', done => {
-    let fakeFile = new File({
+    var fakeFile = new File({
       contents: new Buffer('class notCAMELcase {}'),
       path: 'test.ts'
     });
 
-    let logSpy = sinon.spy(console, 'log');
+    var logSpy = sinon.spy(console, 'log');
 
     formatter = prettyTypescript();
     formatter.write(fakeFile);

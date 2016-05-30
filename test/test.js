@@ -5,7 +5,7 @@ const File = require('vinyl');
 const prettyTypescript = require('../');
 
 describe('PrettyTypeScript', function () {
-  let formatter;
+  let formatter = null;
 
   beforeEach(() => formatter = prettyTypescript());
   afterEach(() => formatter = null);

@@ -33,7 +33,7 @@
       { "order": "fields-first" }
     ],
     "new-parens": true,
-    "no-arg": true,
+    "no-arg": false,
     "no-default-export": true,
     "no-duplicate-key": true,
     "no-duplicate-variable": true,

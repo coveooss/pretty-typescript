@@ -95,7 +95,7 @@
       "check-function"
     ],
     "variable-name": [
-      false,
+      true,
       "check-format",
       "allow-leading-underscore",
       "ban-keywords"

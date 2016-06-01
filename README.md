@@ -21,6 +21,7 @@ private horrible_FielD: number
    {
      return null      ;
   }
+                      public   dude= <any>                       4;
 }
 ```
 
@@ -34,24 +35,26 @@ class incrediblybad {
   dogedoge: () => any = () => {
     return null;
   }
+  public dude = <any>4;
 }
 ```
 
-In bonus, you get this error:
+In bonus, you get these errors:
 
-``` 
-[13:30:47] [gulp-tslint] error verybad.ts[3, 7]: name must be in pascal case
+```
+[11:46:23] [gulp-tslint] error verybad.ts[3, 7]: name must be in pascal case
+[11:46:23] [gulp-tslint] error verybad.ts[4, 11]: variable name must be in camelcase or uppercase
 ```
 
 ## Usage
 
-Step 1. Install :
+Step 1. Install:
 
 ```
 npm install --save-dev pretty-typescript
 ```
 
-Step 2. Use :
+Step 2. Use:
 
 ```javascript
 const prettyTypescript = require('pretty-typescript');

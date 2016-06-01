@@ -7,4 +7,5 @@ private horrible_FielD: number
    {
      return null      ;
   }
+                      public   dude= <any>                       4;
 }

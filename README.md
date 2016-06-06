@@ -39,11 +39,10 @@ class incrediblybad {
 }
 ```
 
-In bonus, you get these errors:
+In bonus, you get this error:
 
 ```
 [11:46:23] [gulp-tslint] error verybad.ts[3, 7]: name must be in pascal case
-[11:46:23] [gulp-tslint] error verybad.ts[4, 11]: variable name must be in camelcase or uppercase
 ```
 
 ## Usage

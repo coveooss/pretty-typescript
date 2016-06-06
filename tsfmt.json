@@ -3,6 +3,7 @@
   "tabSize": 2,
   "newLineCharacter": "\n",
   "convertTabsToSpaces": true,
+  "insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
   "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
   "insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
   "insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false

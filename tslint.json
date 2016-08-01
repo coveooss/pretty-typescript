@@ -42,7 +42,7 @@
     "no-trailing-whitespace": true,
     "no-unreachable": false,
     "no-unused-expression": false,
-    "no-unused-variable": false,
+    "no-unused-variable": true,
     "no-use-before-declare": true,
     "one-line": [
       true,

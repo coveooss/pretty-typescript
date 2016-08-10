@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/coveo/pretty-typescript#readme",
   "dependencies": {
-    "gulp-tslint": "^5.0.0",
+    "gulp-tslint": "^6.0.2",
     "gulp-util": "^3.0.7",
     "lazypipe": "^1.0.1",
     "through2": "^2.0.1",
@@ -29,7 +29,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "gulp": "^3.9.1",
-    "mocha": "^2.5.3",
+    "mocha": "^3.0.2",
     "sinon": "^1.17.4",
     "vinyl": "^1.1.1"
   }

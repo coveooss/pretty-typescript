@@ -36,11 +36,10 @@ describe('PrettyTypeScript', () => {
 
     var logSpy = sinon.spy(console, 'log');
 
-    formatter = prettyTypescript();
     formatter.write(fakeFile);
     formatter.on('data', file => {
       expect(logSpy.callCount).to.equal(1);
-      expect(logSpy.firstCall.args[2]).to.match(/name must be in pascal case/);
+      expect(logSpy.firstCall.args.join()).to.match(/name must be in pascal case/);
       done();
     });
   });

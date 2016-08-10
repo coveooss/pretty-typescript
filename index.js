@@ -7,5 +7,5 @@ const tsfmtOptions = require('./tsfmt.json');
 
 module.exports = lazypipe()
   .pipe(tsfmt, { baseDir: __dirname, tsfmt: true, tslint: true })
-  .pipe(tslint, { configuration: tslintOptions })
-  .pipe(tslint.report, 'prose', { emitError: false });
+  .pipe(tslint, { configuration: tslintOptions, formatter: 'prose' })
+  .pipe(tslint.report, { emitError: false });

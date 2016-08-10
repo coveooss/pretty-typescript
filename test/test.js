@@ -7,6 +7,8 @@ const prettyTypescript = require('../');
 describe('PrettyTypeScript', () => {
   var formatter = null;
 
+  this.timeout(10000);
+
   beforeEach(() => {
     formatter = prettyTypescript();
   });

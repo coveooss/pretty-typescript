@@ -27,6 +27,10 @@
       false,
       140
     ],
+    "semicolon": [
+      true,
+      "always"
+    ],
     "member-access": false,
     "member-ordering": [
       false,

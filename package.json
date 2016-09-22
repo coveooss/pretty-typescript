@@ -23,7 +23,7 @@
     "lazypipe": "^1.0.1",
     "through2": "^2.0.1",
     "tslint": "^3.10.2",
-    "typescript": "^1.8.10",
+    "typescript": "^2.0.3",
     "typescript-formatter": "^2.2.0"
   },
   "devDependencies": {

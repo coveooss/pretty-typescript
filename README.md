@@ -62,6 +62,14 @@ gulp.task('prettify', function () {
   gulp.src('src/**/*.ts')
     .pipe(prettyTypescript())
     .pipe(gulp.dest('src'));
+
+
+// to fail the build when the linter complain : 
+gulp.task('prettify', function () {
+  gulp.src('src/**/*.ts')
+    .pipe(prettyTypescript({ emitError: true }))
+    .pipe(gulp.dest('src'));
+
 });
 ```
 

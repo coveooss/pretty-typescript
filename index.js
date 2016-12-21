@@ -9,5 +9,5 @@ module.exports = (options)=> {
   return lazypipe()
   .pipe(tsfmt, { baseDir: __dirname, tsfmt: true, tslint: true })
   .pipe(tslint, { configuration: tslintOptions, formatter: 'prose' })
-  .pipe(tslint.report, Object.assign({ emitError: false }, options));
+  .pipe(tslint.report, Object.assign({ emitError: false }, options))();
 }

@@ -23,7 +23,7 @@ describe('PrettyTypeScript', () => {
     formatter.write(fakeFile);
     formatter.once('data', file => {
       expect(file.isBuffer()).to.be.true;
-      expect(file.contents.toString()).to.equal('let anything: number = { nopadding };');
+      expect(file.contents.toString()).to.equal('let anything: number={ nopadding };');
       done();
     });
   });

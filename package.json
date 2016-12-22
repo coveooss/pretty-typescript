@@ -1,6 +1,6 @@
 {
   "name": "pretty-typescript",
-  "version": "1.15.0",
+  "version": "1.13.2",
   "description": "TSLint and TypeScript Formatter configuration files",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
     "lazypipe": "^1.0.1",
     "through2": "^2.0.1",
     "tslint": "^3.10.2",
-    "typescript": "^2.0.9",
+    "typescript": "1.8.x",
     "typescript-formatter": "^4.0.0"
   },
   "devDependencies": {

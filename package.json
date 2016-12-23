@@ -22,7 +22,7 @@
     "gulp-util": "^3.0.7",
     "lazypipe": "^1.0.1",
     "through2": "^2.0.1",
-    "tslint": "^3.10.2",
+    "tslint": "^4.1.1",
     "typescript": "^2.0.9",
     "typescript-formatter": "^4.0.0"
   },

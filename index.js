@@ -22,7 +22,7 @@ const tslintOptions = hasTslintInWorkingDirectory ? require(pathToTslintInWorkin
 
 module.exports = (options) => {
   return lazypipe()
-  .pipe(tsfmt, Object.assign({ baseDir: tsfmtPath, tsfmt: true, tslint: true }))
+  .pipe(tsfmt, { baseDir: tsfmtPath, tsfmt: true, tslint: true })
   .pipe(tslint, { configuration: tslintOptions, formatter: 'prose' })
   .pipe(tslint.report, Object.assign({ emitError: false }, options))();
 }
